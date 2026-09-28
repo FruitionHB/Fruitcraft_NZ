@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([19664908.788459, -4826269.298617, 19708535.212023, -4798715.201452], map.getSize());
+map.getView().fit([19668251.628942, -4824280.064515, 19700973.032253, -4803617.475055], map.getSize());
 
 //change cursor
 function pointerOnFeature(evt) {
@@ -532,13 +532,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Updated 27/07/26';
+                linkElement.innerHTML = 'Updated 28/09/26';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'Updated 27/07/26';
+            linkElement.innerHTML = 'Updated 28/09/26';
         }
 
         titleElement.appendChild(linkElement);
